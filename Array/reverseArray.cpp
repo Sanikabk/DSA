@@ -3,10 +3,15 @@ using namespace std;
 
  int main(){
     int arr[6]={1,2,3,4,5,6};
-    int length = 6;
-    for(int i=5; i>=0; i--){
-        cout<<arr[i]<<" ";
+    int s = 0;
+    int e = 5;
+    while(s<e){
+        swap(arr[s], arr[e]);
+        s++;
+        e--;
     }
-    cout<<endl;
+    for(int e: arr){
+    cout<<e<<" ";
+    }
     return 0;  
 }
